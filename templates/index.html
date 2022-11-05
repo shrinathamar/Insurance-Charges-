@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Medical Insurence Charges Predictor</title>
+  </head>
+
+
+  <body>
+    <hr size="5" >
+    <center>
+      <img src="static/plus_medical.png" height="50" width="50">
+      <h1> The Medical Charges Predictor </h1>
+      <em><pr> We will Give You Perfect Medical Insurence. </pr></em>
+      <hr>
+    <center>
+
+    <form action="/predict_charge" method ="POST">
+      <br>
+      <br><br><br><br>
+      <label>Age      : </label><input type="text" name ="age"><br><br>
+     
+      <label>BMI      : </label><input type="text" name ="bmi"><br><br>
+      <label>Children : </label><input type="text" name ="children"><br><br>
+
+      <h3>Select Gender</h3>
+      <input type="radio"  name="sex" value="male"/>
+      <label for="radio-bhk-1">Male</label>
+      <input type="radio"  name="sex" value="female"/>
+      <label for="radio-bhk-1">Female</label>
+
+      <h3>Are You Smoker</h3>
+      <input type="radio"  name="smoker" value="yes"/>
+      <label for="radio-bhk-1">Yes</label>
+
+      <input type="radio"  name="smoker" value="no" checked/>
+      <label for="radio-bhk-2">No</label> <br>
+
+      <h3>Which Region Of Country</h3>
+      <input type="radio"  name="region" value="northeast"/>
+      <label for="radio-bhk-1">Northeast</label>
+
+      <input type="radio"  name="region" value="northwest" checked/>
+      <label for="radio-bhk-2">Northwest</label>
+
+      <input type="radio"  name="region" value="southeast"/>
+      <label for="radio-bhk-3">Southeast</label>
+
+      <input type="radio" name="region" value="southwest"/>
+      <label for="radio-bhk-4">Southwest</label><br>
+
+      <br>
+      <input type="submit">
+      <br><br>
+
+    </form>
+
+
+  </body>
+</html>
